@@ -105,7 +105,6 @@
         padding: 0 1rem;
         border-bottom: none; 
 
-        // Restauramos el pipe lateral
         &:not(:last-child)::after {
             position: absolute;
             top: 50%;

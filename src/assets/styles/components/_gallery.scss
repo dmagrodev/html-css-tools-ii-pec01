@@ -1,0 +1,54 @@
+@use "../variables" as vars;
+@use "../utils/functions" as func;
+
+/* ---------------------------------- */
+/* GALLERY*/
+/* ---------------------------------- */
+
+.gallery-section {
+      padding-top: func.rem(20);
+      padding-bottom: func.rem(20);
+      text-align: center;
+}
+
+.gallery__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(func.rem(300), 1fr));
+    gap: func.rem(15);
+    padding: 0;
+    margin: func.rem(30) auto 0 auto;
+    list-style: none;
+}
+
+.gallery__item {
+    overflow: hidden; 
+    background-color: vars.$uoc-bg-light;
+    border: func.rem(1) solid vars.$uoc-corporate-light;
+    border-radius: func.rem(8);
+    box-shadow: 0 func.rem(2) func.rem(2) rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 func.rem(8) func.rem(16) rgba(0, 0, 0, 0.2);
+        transform: translateY(func.rem(-5)) scale(1.02) 
+    }
+}
+
+.gallery__caption {
+    padding: func.rem(15) func.rem(10);
+    margin: 0;
+    font-size: func.rem(15);
+    font-weight: bold;
+    color: vars.$color-kioto-primary
+}
+
+.gallery__image { 
+    width: 100%; 
+    height: func.rem(200); 
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+
+    .gallery__item:hover & {
+        transform: scale(1.05);
+    }
+}

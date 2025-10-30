@@ -5,22 +5,401 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>PEC 1 - Kioto tradicional</title>
   </head>
-  <body>
-    <div class="uoc-container">
+  
+  <body class="kioto-body">
+    <include src="./views/header.html" id = "inicio"></include>
+
+    <div id = "inicio" class="kioto-container kioto-container--collapsable">
+
+      <button class="kioto-toggle-btn" aria-expanded="true" aria-controls="kioto--Content--Body">
+            <span class="kioto-toggle-btn__icon">+</span>
+      </button>
+
+      <h1 class="kioto-title">Kioto</h1>
+      <h2 class="kioto-subtitle color--kioto">la joya tradicional de Japón</h2>
+
+      <div id="kioto--Content--Body" class="kioto-content">
+        <p class="kioto-text-justify">Kioto <b>(京都)</b> es una de las ciudades más visitadas de Japón y la estrella de la región de Kansai. 
+        No es de extrañar, dada la historia que tiene y lo mucho que hay que ver. 
+        Sin embargo, descubrir todos los rincones de la ciudad en unos pocos días puede ser un quebradero de cabeza. No sólo por falta de tiempo, 
+        sino por la imposibilidad de saber qué podemos encontrar en cada zona de Kioto.
+        </p>
+
+        <p class="kioto-text-justify">Kioto es una ciudad que combina a la perfección la tradición y la modernidad. 
+          Aquí encontrarás desde templos y santuarios milenarios hasta modernos rascacielos y centros comerciales. 
+          Además, la ciudad es famosa por su exquisita gastronomía, sus jardines zen y sus tradicionales casas de té.
+        </p>
+        <p class="kioto-text-justify">En esta guía te proponemos un recorrido por los lugares imprescindibles que ver en Kioto, 
+          para que puedas organizar tu viaje de forma sencilla y aprovechar al máximo tu estancia en la antigua capital de Japón.
+        </p>
+      <section class="slider-section">
+        <div class="slider">
+            <div class="slider__track">
+                <div class="slider__slide slider__slide--active">
+                    <img src=".\assets\images\Kiyozumi-Dera-view-md.jpg" alt="Guía turística de Kioto" class="slider__image">
+                </div>
+                <div class="slider__slide slider__slide">
+                    <img src="https://japonismo.com/wp-content/uploads/2018/03/guia-turistica-kioto-japonismo.jpg" alt="Guía turística de Kioto" class="slider__image">
+                </div>
+                <div class="slider__slide">
+                    <img src="https://images.pexels.com/photos/1325837/pexels-photo-1325837.jpeg" alt="Trajes tradicionales de Kioto" class="slider__image">
+                </div>
+                <div class="slider__slide">
+                    <img src=".\assets\images\Kinkaku-Ji-md.jpg" alt="Guía turística de Kioto" class="slider__image">
+                </div>
+                <div class="slider__slide">
+                    <img src=".\assets\images\bosque-de-bambu-kyoto-japon-md.jpg" alt="Guía turística de Kioto" class="slider__image">
+                </div>
+              </div>
+            <button class="slider__btn slider__btn--prev" aria-label="Foto anterior">
+                <i class="fas fa-chevron-left" aria-hidden="true"></i>
+            </button>
+            <button class="slider__btn slider__btn--next" aria-label="Foto siguiente">
+                <i class="fas fa-chevron-right" aria-hidden="true"></i>
+            </button>
+
+            <div class="slider__dots">
+            </div>
+        </div>
+      </section>
+      <p class="text-center">¡Prepárate para descubrir la magia de Kioto y sumergirte en la cultura japonesa!</p>
+      </div>
+    </div>
+
+    <div id="gion" class="kioto-container kioto-container--collapsable">
+      <button class="kioto-toggle-btn" aria-expanded="true" aria-controls="gion--content--body">
+            <span class="kioto-toggle-btn__icon">+</span>
+      </button>
+      <h2 class="kioto-title">El Barrio de Gion</h2>
+      <h3 class="kioto-subtitle color--kioto">El Distrito de las Geishas</h3>
+
+      <div id="gion--content--body" class="kioto-content">
+        <img class="kioto__img--large" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/150124_Gion_Kyoto_Japan01s3.jpg/1280px-150124_Gion_Kyoto_Japan01s3.jpg" 
+          alt="Gion, Kioto"/>
+        <p class="kioto-text-justify">El barrio de Gion es conocido principalmente por conservar la imagen del Japón clásico gracias a su excelente estado de conservación. 
+          También por ser el barrio de las geishas
+        </p>
+        <p class="kioto-text-justify">Gion es un lugar imprescindible para quienes visitan Kioto por primera vez. 
+          Pasear por sus calles es como retroceder en el tiempo y sumergirse en la cultura tradicional japonesa.
+        </p>
+        <p class="kioto-text-justify">con diferencia, el barrio más popular y visitado de Kioto. Es uno de esos lugares que al conocerlo se quedan
+          muy adentro junto a sensaciones que inexplicablemente duran para siempre.</p>
+        <p class="kioto-text-justify">A continuación, te presentamos una galería de imágenes que capturan la esencia y belleza del barrio de Gion en Kioto:</p>
+      
+        <section id="galeria" class="gallery-section">
+          <h2 class="kioto-subsection-title">Galería Gion</h2>
+          <h3 class="kioto-subsection-subtitle">Tradición y rincones icónicos.</h3>
+          
+          <ul class="gallery__list">
+              
+              <li class="gallery__item">
+                <img 
+                    src="https://japonpedia.com/wp-content/uploads/2020/07/Qu%C3%A9-ver-barrio-de-Gion-Kioto.jpeg.webp"
+                    alt="Barrio de Gion, Kioto."
+                    class="gallery__image"/>
+                <p class="gallery__caption">Barrio de Gion, Kioto</p>
+              </li>
+
+              <li class="gallery__item">
+                  <img 
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/150124_Gion_Kyoto_Japan01s3.jpg/1280px-150124_Gion_Kyoto_Japan01s3.jpg" 
+                      alt="Calle principal del distrito de Gion "
+                      class="gallery__image"/>
+                  <p class="gallery__caption">Hanamikoji Dori, calle principal del distrito de Gion</p>
+              </li>
+
+              <li class="gallery__item">
+                  <img src="https://www.japancherryblossom.com/uploads/images/kyoto/gion-shirakawa.jpg" 
+                  alt="Shirakawa, calle tradicional en el barrio de Gion, Kioto." class="gallery__image"/>
+                  <p class="gallery__caption">Calle tradicional en el barrio de Gion</p>
+              </li>
+
+              <li class="gallery__item">
+                  <img src="https://traditionalkyoto.com//wp-content/uploads/2016/09/teahouse.png"       
+                  alt="Casa de té Ichiriki-tei" class="gallery__image"/>
+                  <p class="gallery__caption">Casa de té Ichiriki-tei</p>
+              </li>
+              </ul>
+        
+        </section>
+        <p class="kioto-subsection-title kioto-text-justify">Recorrido por el barrio de Gion</p>
+        <ol class="kioto__orderedlist">
+            <li class="kioto__item">Comienza en la estación de <strong>Gion-Shijo</strong>.</li>
+            <li class="kioto__item">Pasea por <strong>Hanamikoji Dori</strong>, la calle principal del distrito.</li>
+            <li class="kioto__item">Visita las casas de <strong>té</strong> en Gion y observa a las <strong>geishas</strong>.</li>
+            <li class="kioto__item">Explora el área de <strong>Shirakawa</strong> y sus encantadoras calles.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div id="kiyomizudera" class="kioto-container kioto-container--collapsable">
+      <button class="kioto-toggle-btn" aria-expanded="true" aria-controls="kiyomizudera--content--body">
+            <span class="kioto-toggle-btn__icon">+</span>
+      </button>
+      
+      <h1 class="kioto-title">El templo de Kiyomizudera</h1>
+      <h2 class="kioto-subtitle color--kioto">El Templo del Agua Pura</h2>
+      <div id="kiyomizudera--content--body" class="kioto-content">
+        <p class="kioto-text-justify">El Templo Kiyomizudera es uno de los templos más icónicos de Kioto, famoso por su plataforma de madera que ofrece vistas panorámicas de la ciudad.</p>
+        <p class="kioto-text-justify">Es especialmente hermoso durante la temporada de cerezos en flor y el otoño.</p>
+        <p class="kioto-text-justify">En esta sección, exploraremos algunos datos interesantes sobre Kiyomizudera que quizás no conozcas:</p>
+          <section class="slider-section">
+          <div class="slider">
+              <div class="slider__track">
+                  <div class="slider__slide slider__slide--active">
+                      <img src=".\assets\images\kiyomizu-dera-night-md.jpg" alt="Guía turística de Kioto" class="slider__image">
+                  </div>
+                <div class="slider__slide slider__slide">
+                      <img src="https://livingnomads.com/wp-content/uploads/2018/12/27/kiyomizudera-in-winter.jpg" alt="Kiyomizudera en invierno" class="slider__image">
+                  </div>
+                  <div class="slider__slide slider__slide">
+                      <img src=".\assets\images\kiyomizu-dera-sakura.jpg" alt="Guía turística de Kioto" class="slider__image">
+                  </div>
+                  <div class="slider__slide slider__slide">
+                      <img src=".\assets\images\Kiyozumi-Dera-view-md.jpg" alt="Guía turística de Kioto" class="slider__image">
+                  </div>
+                </div>
+              <button class="slider__btn slider__btn--prev" aria-label="Foto anterior">
+                  <i class="fas fa-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button class="slider__btn slider__btn--next" aria-label="Foto siguiente">
+                  <i class="fas fa-chevron-right" aria-hidden="true"></i>
+              </button>
+              <div class="slider__dots">
+              </div>
+          </div>
+        </section>
+
+        <h3 class="kioto-subsection-title kioto-text-justify">Datos interesantes sobre Kiyomizudera:</h3>
+        <ul class="kioto__list">
+          <li class="kioto__item">Fundado en el año 778, Kiyomizudera es un sitio del Patrimonio Mundial de la UNESCO.</li>
+          <li class="kioto__item">El nombre "Kiyomizu" significa "agua pura", derivado del manantial sagrado que fluye debajo del templo.</li>
+          <li class="kioto__item">La plataforma del templo está construida sin el uso de clavos, utilizando técnicas tradicionales de carpintería japonesa.</li>
+          <li class="kioto__item">El templo alberga la famosa cascada Otowa, donde los visitantes pueden beber agua que se cree tiene propiedades curativas.</li>
+        </ul>
+
+
+      <section id="galeria" class="gallery-section">
+        <h2 class="kioto-subsection-title">Galería Kiyomizudera</h2>
+        <h3 class="kioto-subsection-subtitle">Lugares de interés.</h3>
+
+        <ul class="gallery__list">
+            
+            <li class="gallery__item">
+              <img 
+                  src="https://live.staticflickr.com/65535/52815707567_e1d678e41b_b.jpg"
+                  alt="Puerta Nio-mon"
+                  class="gallery__image"
+              />
+              <p class="gallery__caption">Puerta Nio-mon</p>
+            </li>
+
+            <li class="gallery__item">
+                <img 
+                    src="https://www.kiyomizudera.or.jp/en/img/visit/pic_map_04.webp" 
+                    alt="Hondo"
+                    class="gallery__image" />
+                <p class="gallery__caption">Salón principal Hondo</p>
+            </li>
+
+            <li class="gallery__item">
+                <img src="https://www.kiyomizudera.or.jp/en/img/visit/pic_map_06.webp" 
+                alt="Cascada Otowa" class="gallery__image"/>
+                <p class="gallery__caption">Cascada Otowa, Otowa no taki</p>
+            </li>
+
+            <li class="gallery__item">
+                <img src="https://live.staticflickr.com/5616/15475636169_8b4965e8f7_b.jpg"       
+                alt="Santuario Jishu" class="gallery__image"/>
+                <p class="gallery__caption">Santuario Jishu</p>
+            </li>
+              <li class="gallery__item">
+                <img src="https://www.kiyomizudera.or.jp/en/img/visit/pic_map_05.webp" 
+                alt="Okuno-in Hall" class="gallery__image"/>
+                <p class="gallery__caption">Okuno-in Hall</p>
+            </li>
+
+            <li class="gallery__item">
+                <img src="https://www.kiyomizudera.or.jp/en/img/visit/pic_map_02.webp"       
+                alt="Sai-mon" class="gallery__image"/>
+                <p class="gallery__caption">Sai-mon</p>
+            </li>
+            </ul>
+      
+      </section>
+      </div>
+    </div>
+
+    <div id="kinkakuji" class="kioto-container">
+      <button class="kioto-toggle-btn" aria-expanded="true" aria-controls="kinkakuji--content--body">
+          <span class="kioto-toggle-btn__icon">+</span>
+      </button>
+      <h1 class="kioto-title">Kinkaku-Ji</h1>
+      <h2 class="kioto-subtitle">El Pabellón Dorado</h2>
+
+      <div id="kinkakuji--content--body" class="kioto-content">
+          <img class="kioto__img--large" src="https://www.shokoku-ji.jp/wp-content/themes/shokokuji/assets/img/langMulti/kinkakuji/index/imgGallery01@2x.jpg" 
+          alt="Kinkaku-Ji, Kioto"/>
+        <p class="kioto-text-justify">Kinkaku-Ji, o el Pabellón Dorado, es un templo budista zen cubierto de pan de oro que refleja su imagen en un estanque sereno. 
+          Es uno de los lugares más fotografiados de Kioto y un símbolo de la riqueza cultural de Japón.</p>
+          <p class="kioto-text-justify">El templo fue construido en 1397 como un retiro para el shogun Ashikaga Yoshimitsu y ha sido un sitio de culto desde entonces.</p>
+        <div class="kioto-two-column-container">
+          <div class="kioto-two-col-container__content">
+            <h3 class="kioto-subsection-title kioto-text-justify">Datos interesantes sobre Kinkaku-Ji:</h3>
+            <ul>
+              <li>El Pabellón Dorado fue originalmente construido como un lugar de retiro para el shogun Ashikaga Yoshimitsu.</li>
+              <li>El templo ha sido destruido y reconstruido varias veces a lo largo de los siglos, siendo la versión actual una reconstrucción de 1955.</li>
+              <li>Kinkaku-Ji está rodeado por un hermoso jardín que cambia con las estaciones, ofreciendo vistas impresionantes durante todo el año.</li>
+              <li>El templo es Patrimonio de la Humanidad de la UNESCO y atrae a millones de visitantes cada año.</li>
+            </ul>
+          </div>
+          <div class="kioto-two-col-container__map" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2525.208169606833!2d135.72951939481212!3d35.038867222039414!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a820c0eb46bd%3A0xee4272b1c22645f!2sPabellon%20Dorado!5e1!3m2!1ses!2sus!4v1761442690762!5m2!1ses!2sus" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>   
+        </div>
+    </div>
+    </div>
+
+    <div id="fushimi-inari" class="kioto-container">
+      <button class="kioto-toggle-btn" aria-expanded="true" aria-controls="fushimi--content--body">
+        <span class="kioto-toggle-btn__icon">+</span>
+      </button>
+
+      <h1 class="kioto-title">Fushimi Inari</h1>
+      <h2 class="kioto-subtitle">El Santuario de los Mil Torii</h2>
+      <div id="fushimi--content--body" class="kioto-content">
+          <img class="kioto__img--large" src="https://www.japan-guide.com/g18/3915_top.jpg" 
+          alt="Fushimi Inari, Kioto"/>
+
+        <p class="kioto-text-justify">El Santuario Fushimi Inari (伏見稲荷大社, Fushimi Inari Taisha) es un importante santuario sintoísta situado al sur de Kioto . 
+          Es famoso por sus miles de puertas torii bermellón , que se extienden a lo largo de una red de senderos tras sus edificios principales. Los senderos conducen 
+          al frondoso bosque del sagrado Monte Inari, de 233 metros de altura, que forma parte del recinto del santuario
+        </p>
+
+        <div class="two-column-container">
+          <div class="two-col-container__content">
+            <h3 class="kioto-subsection-title kioto-text-justify">Datos interesantes sobre Fushimi Inari:</h3>
+            <ul class="kioto__list">
+              <li class="kioto__item">El santuario principal fue fundado en el año 711, lo que lo convierte en uno de los santuarios más antiguos de Japón.</li>
+              <li class="kioto__item">Los torii rojos son donados por individuos y empresas, y cada uno lleva inscrito el nombre del donante y la fecha de la donación.</li>
+              <li class="kioto__item">El sendero completo a través de los torii hasta la cima del monte Inari puede tomar entre 2 a 3 horas para recorrerlo.</li>
+              <li class="kioto__item">Fushimi Inari es conocido por sus estatuas de zorros, que son considerados mensajeros del dios Inari.</li>
+            </ul>
+          </div>
+          <section class="slider-section">
+            <div class="slider">
+                <div class="slider__track">
+                    <div class="slider__slide slider__slide--active">
+                        <img src="https://www.japan-guide.com/g18/3915_03.jpg" alt="Fushimi Inari" class="slider__image">
+                    </div>
+                  <div class="slider__slide slider__slide">
+                        <img src="https://www.japan-guide.com/g18/3915_04.jpg" alt="Kiyomizudera en invierno" class="slider__image">
+                    </div>
+                    <div class="slider__slide slider__slide">
+                        <img src="https://www.japan-guide.com/g19/3915_02.jpg" alt="Fushimi Inari" class="slider__image">
+                    </div>
+                    <div class="slider__slide slider__slide">
+                        <img src="https://live.staticflickr.com/7152/6741106417_c5fc23c116_b.jpg" alt="Fushimi Inari" class="slider__image">
+                    </div>
+                  </div>
+                <button class="slider__btn slider__btn--prev" aria-label="Foto anterior">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="slider__btn slider__btn--next" aria-label="Foto siguiente">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+                <div class="slider__dots">
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    </div>
+
+    <div id="arashiyama" class="kioto-container">
+      <button class="kioto-toggle-btn" aria-expanded="true" aria-controls="arashiyama--content--body">
+        <span class="kioto-toggle-btn__icon">+</span>
+      </button>
+      <h1 class="kioto-title">Arashiyama</h1>
+      <h2 class="kioto-subtitle">El Bosque de Bambú y Más</h2>
+     
+      <div id="arashiyama--content--body" class="kioto-content">
+        <p class= "kioto-text-justify">Arashiyama es una zona pintoresca al oeste de Kioto, conocida por su bosque de bambú, templos históricos y el río Hozu. 
+          Es un lugar ideal para pasear, disfrutar de la naturaleza y experimentar la cultura tradicional japonesa.
+        </p>
+        <a href="#arashiyama" target="_blank" title="Arashiyama">
+          <img class="kioto__img--large" src="https://guias.nautaliaviajes.com/storage/2024/11/bosque-bambu-arashiyama-destacada-1536x864.jpg" 
+          alt="Bosque de Bambu de Arashiyama"/>
+        </a>
+        <h3 class="kioto-subsection-title kioto-text-justify">Que ver en Arashiyama</h3>
+        <ul class="kioto__list">
+          <li class="kioto__item">Kimono Forest, preciosa exposición de pilares cilíndricos de textiles teñidos al estilo tradicional del kyo-yuzen.</li>
+          <li class="kioto__item">Calle principal de Arashiyama.</li>
+          <li class="kioto__item">bosque de bambú de Arashiyama, punto clave de la visita a esta zona de la ciudad.</li>
+          <li class="kioto__item">Puente Togetsukyo, con unas vistas espectaculares de Arashiyama</li>
+        </ul>
+
+        <section class="slider-section">
+            <div class="slider">
+                <div class="slider__track">
+                    <div class="slider__slide slider__slide--active">
+                        <img src="https://photos.smugmug.com/Kyoto/Kyoto-Things-To-Do/i-X4SbQPn/0/L/arashiyama-bamboo-grove-M.jpg" alt="Arashiyama bambu forest" class="slider__image">
+                    </div>
+                  <div class="slider__slide slider__slide">
+                        <img src="https://www.japan-guide.com/g18/3965_02.jpg" alt="arashiyama train" class="slider__image">
+                    </div>
+                    <div class="slider__slide slider__slide">
+                        <img src="https://www.japan-guide.com/g18/3912_02.jpg" alt="arashiyama sagano" class="slider__image">
+                    </div>
+                    <div class="slider__slide slider__slide">
+                        <img src="https://photos.smugmug.com/Kyoto/Arashiyama/i-h8xgBxp/0/KvdXZjWjLJnTzNnrC7JG8DxJ4wPWkfmhJgDc626QC/L/Shutterstock_1197478252-L.jpg" alt="Gio-ji temple" class="slider__image">
+                    </div>
+                    <div class="slider__slide slider__slide">
+                        <img src="https://live.staticflickr.com/65535/52749910085_f4bcb34b7f_b.jpg" alt="Kimono Forest" class="slider__image">
+                    </div>
+                  </div>
+                <button class="slider__btn slider__btn--prev" aria-label="Foto anterior">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                </button>
+                <button class="slider__btn slider__btn--next" aria-label="Foto siguiente">
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </button>
+                <div class="slider__dots">
+                </div>
+            </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <div class="uoc-container">
       <picture>
         <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
         <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
       </picture>
       <h1 class="uoc-title">Hello, UOC!</h1>
+      <i class="fas fa-university"></i>
       <p>
         This is a starter template for the Advanced HTML and CSS Tools courses
         from the Master's Program in Multimedia Applications and the Master's
         Program in Web App and Website Development at the Universitat Oberta de
         Catalunya.
       </p>
+    </div> -->
+
+    <button id="scrollToTopBtn" class="kioto-button-scroll-top " title="Subir al inicio"> <!--modifciar este punto ver si finalmente lo hago con javascript o con ancla-->
+        <a class="kioto-color-white" href="#inicio"><i class="fas fa-arrow-up"></i></a> 
+    </button>
+
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox__content">
+            <button class="lightbox__close-btn" aria-label="Cerrar galería modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+            <img id="lightbox-image" class="lightbox__image" alt="Imagen ampliada de la galería">
+        </div>
     </div>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

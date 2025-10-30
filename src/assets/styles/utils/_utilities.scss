@@ -1,0 +1,24 @@
+
+@use "../variables" as vars;
+@use "../utils/functions" as func;
+@use "sass:color";
+
+/* ---------------------------------- */
+/* UTILITIES*/
+/* ---------------------------------- */
+
+.kioto-text-center {
+  text-align: center;
+}
+
+.kioto-text-justify {
+  text-align: justify;
+}
+
+.kioto-text-right {
+  text-align: right;
+}
+
+.kioto-color-white{
+    color: vars.$color-white;
+}

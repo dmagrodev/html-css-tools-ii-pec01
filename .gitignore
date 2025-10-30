@@ -251,3 +251,8 @@ $RECYCLE.BIN/
 
 ### UOC Boilerplate ###
 dist
+
+# ----------------------------------
+# IGNORAR ARCHIVOS DE ESTILO ESPECÍFICOS (Deprecados o de prueba)
+# ----------------------------------
+src/assets/styles/layouts/_header-deprected.scss

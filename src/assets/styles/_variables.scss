@@ -1,12 +1,46 @@
 @use "sass:color";
+@use "./utils/functions" as func;
 
+// -----------------------//
+// VARIABLES GENERALES
 $font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
 $font-family-serif: "Georgia", "Times New Roman", serif;
-
 $uoc-corporate: #000078;
 $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
-$mqMinWidth: 420px;
+// -----------------------//
+//VARIABLES REQUERIDAS POR EL HEADER (para resolver el error)
+// -----------------------//
+$color-white: #fff;
+$uoc-bg-light: $color-white; // Fondo claro
+$uoc-corporate-light: #aaa;  // Gris de los separadores
+
+
+// MEDIA BREAKPOINTS (Mobile First)
+$mq-desktop-width: func.rem(768);
+$mq-min-width: func.rem(420);
+$mq-desktop-start: func.rem(768);
+
+//-----------------------//
+// VARIABLES (Kioto específicas)
+//-----------------------//
+$color-kioto-bg: #83958f;     // Fondo principal inspirado en Kioto (un tono cálido)
+$color-kioto-secondary: #FF3B3F; // Color de acento vibrante
+$color-kioto-container: #fff8f0; 
+$color-kioto-title: #1d3557;  // Color de acento inspirado en los cerezos en flor
+$color-kioto-subtitle: #a66249; 
+
+$color-kioto-sakura-bg: #ff6f61;     // Fondo principal inspirado en Kioto (un tono cálido)
+$color-kioto-sakura-secondary: #FF3B3F; // Color de acento vibrante
+$color-kioto-sakura-container: #FFEBE1; 
+$color-kioto-sakura-title: #2D2D2D;  // Color de acento inspirado en los cerezos en flor
+$color-kioto-sakura-subtitle: #a8763e; 
+
+$color-kioto-primary: #a8763e;       // Dorado/Bronce (Color de acento, p. ej., para Kinkaku-ji)
+$color-kioto-secondary: #c0392b;    // Rojo (Color de acento, p. ej., para Torii)
+$color-kioto-text: #333333;             // Texto oscuro
+$color-kioto-white: #fff;            // Blanco
+$color-kioto-light-bg: #fafafa;      // Fondo de sección claro

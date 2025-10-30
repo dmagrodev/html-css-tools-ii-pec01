@@ -7,13 +7,20 @@
  * Import dependencies
  */
 @use "dependencies";
+@use "utils/functions";
+@use "utils/utilities";
 
 /**
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
 
- @use "layouts/home";
+//  @use "layouts/home";
+ @use "layouts/header";
+ @use "layouts/kioto";
+ @use "components/lightbox";
+ @use "components/carrusel";
+ @use "components/gallery";
 
 /**
  * Do NOT include anything else in this file!

@@ -1,15 +1,17 @@
 {
-  "name": "uoc-boilerplate",
-  "version": "3.12.0",
+  "name": "html-css-tools-ii-pec01",
+  "version": "1.0.0",
   "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "PEC01 - Proyecto final de herramientas HTML/CSS avanzado.",
   "scripts": {
+    "start": "npm-run-all clean parcel:build parcel:serve",
     "parcel:serve": "parcel -p 8123 --target web",
     "parcel:build": "parcel build --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
     "build": "npm-run-all clean parcel:build",
-    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "stylelint": "stylelint src/**/*.scss"
   },
   "targets": {
     "web": {
@@ -33,7 +35,7 @@
   "bugs": {
     "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://dmagrodev.github.io/html-css-tools-ii-pec01",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.3",
     "autoprefixer": "^10.4.20",
@@ -42,9 +44,13 @@
     "postcss-preset-env": "^10.1.3",
     "posthtml-include": "^2.0.1",
     "rimraf": "^6.0.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "stylelint-config-recess-order": "^7.4.0",
+    "stylelint-config-recommended-scss": "^16.0.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^7.0.1"
+    "@fortawesome/fontawesome-free": "^7.0.1",
+    "stylelint": "^16.25.0",
+    "stylelint-scss": "^6.12.1"
   }
 }

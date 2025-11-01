@@ -36,7 +36,7 @@
     display: block;
     max-width: 99%;
     max-height: 99vh;
-    object-fit: contain; /* Asegura que la imagen se vea completa sin cortar */
+    object-fit: contain;
     border-radius: func.rem(15);
 }
 

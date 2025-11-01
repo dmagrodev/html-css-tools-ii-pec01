@@ -266,6 +266,7 @@
 /* BLOQUE: main-footer */
 /* ---------------------------------- */
 .main-footer {
+  display: block;
   width: 100%; 
   padding: func.rem(30) 0; 
   color: vars.$color-kioto-text;
@@ -335,4 +336,18 @@
   @media (min-width: vars.$mq-desktop-start) { 
     display: none; 
   }
+}
+
+.image-credit {
+    display: block; 
+    font-size: 0.75rem; 
+    color: var(--color-gray-dark); 
+    margin-top: 0.5rem; 
+    text-align: center; 
+    
+    a {
+        /* Estilo para los enlaces de atribución */
+        color: var(--color-link-default);
+        text-decoration: underline;
+    }
 }
